@@ -1,0 +1,25 @@
+.btn-green {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 16px 24px;
+    border: 1px solid transparent;
+    background: $green;
+    border-radius: 30px;
+    transition: .3s all;
+    margin-left: 2rem;
+    display: inline-block;
+
+    &:focus {
+        text-decoration: none;
+        color: white;
+        outline: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 1px solid black;
+    }
+}

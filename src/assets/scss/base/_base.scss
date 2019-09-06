@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html,
+body {
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "montserrat", sans-serif; // font-size:62.5%;
+}
+
+@include media-breakpoint-up('sm') {
+    .has-fresh-line {
+        position: relative;
+        
+        &:before {
+            margin-left: -95px !important;
+        }
+    
+        &:before,
+        &:after {
+            background: white;
+            content: " ";
+            display: inline-block;
+            height: 2px;
+            margin: 0 10px;
+            position: absolute;
+            top: 50%;
+            width: 80px;
+            zoom: 1;
+        }
+
+        &--black {
+            &:before,
+            &:after {
+                background: $black;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+#work {
+    .card {
+        border: 0;
+        height: 100%;
+
+        @include media-breakpoint-down('xs') {
+            &-img-top {
+                width: 300px;
+            }
+        }
+
+        &-text {
+            font-size: 14px;
+        }
+    }
+}

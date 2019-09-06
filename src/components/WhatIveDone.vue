@@ -1,0 +1,70 @@
+<template>
+    <section class="container bg-white what-ive-done py-5" id="what-ive-done">
+        <h2 class="text-center mb-5 has-fresh-line has-fresh-line--black">Here's my experience so far</h2>
+        <div v-for="(item, index) in whatIveDone" :key="index" class="row mb-4" data-aos="fade-up">
+            <div class="col-md-3 col-md-offset-1 d-flex align-items-start align-items-lg-center justify-content-center">
+                <img 
+                    class="img-fluid what-ive-done__img mb-3 mb-md-0" 
+                    height="200" 
+                    width="200" 
+                    v-lazy="require(`../../public/img/${item.image}`)" 
+                    :alt="item.name"
+                />
+            </div>
+            <div class="col-md-8">
+                <h3>
+                    <a :href="item.link" class="text-dark" target="_blank">{{ item.name }}</a>
+                </h3>
+                <h5 class="text-green">{{ item.title }}</h5>
+                <h5>{{ item.location }}</h5>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      whatIveDone: [
+        {
+          name: "MJ Kretsinger",
+          title: "Web Developer, since May 2018",
+          link: "https://mjkretsinger.com/",
+          location: "Edina, MN",
+          image: "MJK.png",
+          description:
+            "During my time as a Web Developer at MJ Kretsinger, the majority of my time was spent building an offline-capable progressive web application built in VueJS using Firebase and NodeJS for the back-end. My primary responsibility was building the front-end and reporting capability of the application. I was also a primary developer on sizeable projects built in VueJS for Medtronic and Lifelink III. Furthermore, I have sharpened my PHP skills by building several WordPress sites for companies such as New Horizon Academy, Kinderberry Hill, and Lifelink III."
+        },
+        {
+          name: "Comfy Chair Consulting",
+          title: "Web Developer Intern, October 2017 to February 2018",
+          link: "https://comfychair.biz/",
+          location: "Minneapolis, MN",
+          image: "comfy-chair.svg",
+          description:
+            "After graduating from Prime Academy, I worked as a Front-End Developer at Comfy Chair Consulting. We built our sites by constructing our own HTML/CSS templates from the ground up and converted them into WordPress using PHP. We also built our own WordPress template in VueJS."
+        },
+        {
+          name: "Prime Digital Academy",
+          title: "Full Stack Software Engineering Degree, earned August 2017",
+          link: "https://primeacademy.io",
+          location: "Minneapolis, MN",
+          image: "prime.png",
+          description: "I discovered my love for programming shortly after graduating from college. After spending countless late nights going through Freecodecamp challenges, I figured I should make a career out of it."
+        },
+        {
+          name: "Metropolitan State University",
+          title: "B.S. in International Business, earned December 2016",
+          link: "https://www.metrostate.edu/",
+          location: "Minneapolis, MN",
+          image: "metro-state.jpg",
+          description: "I graduated Magna Cum Laude with a 3.85 GPA."
+        }
+      ]
+    };
+  },
+  created() {}
+};
+</script>
