@@ -5,13 +5,16 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    idInView: 'intro'
+    idInView: "intro"
   },
   getters: {
-    changeIdInView(currentId) {
-      store.state.idInView = currentId;
+    changeIdInView: state => (newId) => {
+      console.log('HIIIIIY', newId);
+      state.idInView = newId;
     }
   },
   mutations: {},
   actions: {}
 });
+
+export default store;

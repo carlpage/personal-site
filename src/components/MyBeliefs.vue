@@ -2,7 +2,7 @@
   <section class="bg-white py-5"
     id="my-beliefs"
     v-observe-visibility="{
-      callback: this.$store.getters.changeIdInView('my-beliefs'),
+      callback: $store.getters.changeIdInView('my-beliefs'),
       intersection: {threshold: 0.6,}
   }">
     <div class="container">

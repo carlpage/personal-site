@@ -29,11 +29,11 @@
     </footer>
     <!-- end footer -->
 
-    <div class="navigation-buttons strikingly-fixed" style="bottom: 20px;">
-      <span v-scroll-to="scrollToHigherId()" class="prev d-flex align-items-center justify-content-center">
+    <div class="navigation-buttons">
+      <span v-scroll-to="aboveSectionId()" class="prev d-flex align-items-center justify-content-center">
         <i class="fa fa-chevron-up text-white"></i>
       </span>
-      <span v-scroll-to="scrollToLowerId()" class="next d-flex align-items-center justify-content-center">
+      <span v-scroll-to="lowerSectionId()" class="next d-flex align-items-center justify-content-center">
         <i class="fa fa-chevron-down text-white"></i>
       </span>
     </div>
@@ -47,9 +47,9 @@
         // nextElement: false
       }
     },
-    computed: {
-      scrollToHigherId() {
-        console.log('HIT scrollToHigherId')
+    methods: {
+      aboveSectionId() {
+        console.log('HIT aboveSectionId')
         if(this.$store.state.idInView === 'what-ive-done') {
           return '#intro';
         } else if(this.$store.state.idInView === 'work') {
@@ -60,8 +60,8 @@
           return '#my-beliefs';
         } 
       },
-      scrollToLowerId() {
-        console.log('HIT scrollToLowerId')
+      lowerSectionId() {
+        console.log('HIT lowerSectionId')
         if(this.$store.state.idInView === 'intro') {
           return '#what-ive-done';
         } else if(this.$store.state.idInView === 'what-ive-done') {
@@ -72,6 +72,11 @@
           return '#contact';
         } 
       }
+    },
+    created() {
+      console.log('store', this.$store);
+      console.log('idInView', this.$store.state.idInView);
+      // console.log('store changeIdInView', this.$store.getters.changeIdInView());
     }
   };
 </script>

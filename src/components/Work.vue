@@ -2,7 +2,7 @@
     <section class="bg-light py-5" 
         id="work" 
         v-observe-visibility="{
-        callback: this.$store.getters.changeIdInView('work'),
+        callback: $store.getters.changeIdInView('work'),
         intersection: {threshold: 0.6,}
     }">
         <div class="container">
