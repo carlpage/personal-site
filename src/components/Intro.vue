@@ -1,9 +1,9 @@
 <template>
     <section class="intro" 
     id="intro"
-    v-observe-visibility="{
-        callback: $store.getters.changeIdInView('intro'),
-        intersection: {threshold: 0.6,}
+    v-waypoint="{
+        callback: this.$store.getters.changeIdInView('intro'),
+        intersection: {threshold: [0.25, 0.75]}
     }"
     >
         <div class="slick-slider">
@@ -26,6 +26,8 @@ export default {
     return {};
   },
   methods: {},
-  created() {}
+  created() {
+      console.log('changeIDin view', this.$store.getters)
+  }
 };
 </script>

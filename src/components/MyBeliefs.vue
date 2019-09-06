@@ -1,9 +1,9 @@
 <template>
   <section class="bg-white py-5"
     id="my-beliefs"
-    v-observe-visibility="{
-      callback: $store.getters.changeIdInView('my-beliefs'),
-      intersection: {threshold: 0.6,}
+    v-waypoint="{
+      callback: this.$store.getters.changeIdInView('my-beliefs'),
+      intersection: {threshold: [0.25, 0.75]}
   }">
     <div class="container">
       <h2 class="text-white text-center mb-4 has-fresh-line">My core beliefs</h2>

@@ -1,9 +1,9 @@
 <template>
     <section class="bg-light py-5" 
-        id="work" 
-        v-observe-visibility="{
-        callback: $store.getters.changeIdInView('work'),
-        intersection: {threshold: 0.6,}
+    id="work" 
+    v-waypoint="{
+        callback: this.$store.getters.changeIdInView('work'),
+        intersection: {threshold: [0.25, 0.75]}
     }">
         <div class="container">
             <h2 class="text-center mb-4 has-fresh-line has-fresh-line--black">My Work</h2>
@@ -82,6 +82,7 @@ export default {
             }
         ]
     };
-  }
+  },
+  methods: {}
 };
 </script>

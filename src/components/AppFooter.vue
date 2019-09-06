@@ -50,15 +50,18 @@
     methods: {
       aboveSectionId() {
         console.log('HIT aboveSectionId')
+        let id;
         if(this.$store.state.idInView === 'what-ive-done') {
-          return '#intro';
+          id = '#intro';
         } else if(this.$store.state.idInView === 'work') {
-          return '#what-ive-done';
+          id = '#what-ive-done';
         } else if(this.$store.state.idInView === 'my-beliefs') {
-          return '#work';
+          id = '#work';
         } else if(this.$store.state.idInView === 'contact') {
-          return '#my-beliefs';
+          id = '#my-beliefs';
         } 
+        console.log('id', id)
+        return id;
       },
       lowerSectionId() {
         console.log('HIT lowerSectionId')
@@ -76,7 +79,6 @@
     created() {
       console.log('store', this.$store);
       console.log('idInView', this.$store.state.idInView);
-      // console.log('store changeIdInView', this.$store.getters.changeIdInView());
     }
   };
 </script>
