@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <app-header />
     <intro />
     <what-ive-done />
     <work />
@@ -11,7 +10,6 @@
 </template>
 
 <script>
-import AppHeader from "./components/AppHeader.vue";
 import Intro from "./components/Intro.vue";
 import WhatIveDone from "./components/WhatIveDone.vue";
 import Work from "./components/Work.vue";
