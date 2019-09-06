@@ -30,10 +30,10 @@
     <!-- end footer -->
 
     <div class="navigation-buttons strikingly-fixed" style="bottom: 20px;">
-      <span v-scroll-to="'#intro'" class="prev d-flex align-items-center justify-content-center">
+      <span v-scroll-to="scrollToHigherId()" class="prev d-flex align-items-center justify-content-center">
         <i class="fa fa-chevron-up text-white"></i>
       </span>
-      <span v-scroll-to="'#contact'" class="next d-flex align-items-center justify-content-center">
+      <span v-scroll-to="scrollToLowerId()" class="next d-flex align-items-center justify-content-center">
         <i class="fa fa-chevron-down text-white"></i>
       </span>
     </div>
@@ -44,15 +44,33 @@
   export default {
     data() {
       return {
-        checked: false
+        // nextElement: false
       }
     },
     computed: {
       scrollToHigherId() {
-        this.checked = false;
+        console.log('HIT scrollToHigherId')
+        if(this.$store.state.idInView === 'what-ive-done') {
+          return '#intro';
+        } else if(this.$store.state.idInView === 'work') {
+          return '#what-ive-done';
+        } else if(this.$store.state.idInView === 'my-beliefs') {
+          return '#work';
+        } else if(this.$store.state.idInView === 'contact') {
+          return '#my-beliefs';
+        } 
       },
       scrollToLowerId() {
-        this.checked = false;
+        console.log('HIT scrollToLowerId')
+        if(this.$store.state.idInView === 'intro') {
+          return '#what-ive-done';
+        } else if(this.$store.state.idInView === 'what-ive-done') {
+          return '#work';
+        } else if(this.$store.state.idInView === 'work') {
+          return '#my-beliefs';
+        } else if(this.$store.state.idInView === 'my-beliefs') {
+          return '#contact';
+        } 
       }
     }
   };

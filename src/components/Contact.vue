@@ -1,5 +1,10 @@
 <template>
-    <section class="container pt-5 pb-5 pb-md-0" id="contact">
+    <section class="container pt-5 pb-5 pb-md-0" 
+        id="contact" 
+        v-observe-visibility="{
+            callback: this.$store.getters.changeIdInView('contact'),
+            intersection: {threshold: 0.6,}
+    }">
         <h2 class="text-center mb-4 has-fresh-line has-fresh-line--black">Contact</h2>
         <div class="row">
             <div class="col-md-6 d-flex align-items-end">

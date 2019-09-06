@@ -1,5 +1,10 @@
 <template>
-    <section class="container bg-white what-ive-done py-5" id="what-ive-done">
+    <section class="container bg-white what-ive-done py-5" 
+      id="what-ive-done" 
+      v-observe-visibility="{
+        callback: this.$store.getters.changeIdInView('what-ive-done'),
+        intersection: {threshold: 0.6,}
+    }">
         <h2 class="text-center mb-5 has-fresh-line has-fresh-line--black">Here's my experience so far</h2>
         <div v-for="(item, index) in whatIveDone" :key="index" class="row mb-4" data-aos="fade-up">
             <div class="col-md-3 col-md-offset-1 d-flex align-items-start align-items-lg-center justify-content-center">

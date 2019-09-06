@@ -1,5 +1,10 @@
 <template>
-    <section class="intro">
+    <section class="intro" 
+    id="intro"
+    v-observe-visibility="{
+        callback: this.$store.getters.changeIdInView('intro'),
+        intersection: {threshold: 0.6,}
+  }">
         <div class="slick-slider">
             <div class="slider" v-lazy:background-image="require('../../public/img/carl-in-rome.jpg')">
                 <div class="slider__testimonials">

@@ -1,5 +1,10 @@
 <template>
-    <section class="bg-light py-5" id="work">
+    <section class="bg-light py-5" 
+        id="work" 
+        v-observe-visibility="{
+        callback: this.$store.getters.changeIdInView('work'),
+        intersection: {threshold: 0.6,}
+    }">
         <div class="container">
             <h2 class="text-center mb-4 has-fresh-line has-fresh-line--black">My Work</h2>
             <div class="row mb-4 justify-content-center">
