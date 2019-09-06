@@ -2,7 +2,10 @@
   "name": "my-personal-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://carlpage.github.com.io/Personal-Site",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -13,6 +16,7 @@
     "bourbon": "^6.0.0",
     "core-js": "^2.6.5",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^2.1.1",
     "register-service-worker": "^1.6.2",
     "vanilla-lazyload": "^12.0.0",
     "vue": "^2.6.10",
