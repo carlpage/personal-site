@@ -9,13 +9,14 @@ export const store = new Vuex.Store({
     intersectionOptions: {
       root: null,
       rootMargin: "0px 0px 0px 0px",
-      threshold: [0.4, 0.6]
+      threshold: 0.3
     }
   },
   getters: {
-    onWaypoint: (state) => (observerData) => {
-      console.log('observerData', observerData)
-      state.idInView = observerData.el.id;
+    visibilityChanged: (state) => (isVisible, entry) => {
+      if (isVisible === true) {
+        state.idInView = entry.target.id;
+      }
     }
   },
   mutations: {},

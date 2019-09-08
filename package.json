@@ -15,6 +15,7 @@
     "bootstrap": "^4.3.1",
     "bourbon": "^6.0.0",
     "core-js": "^2.6.5",
+    "eslint-utils": "^1.4.2",
     "font-awesome": "^4.7.0",
     "gh-pages": "^2.1.1",
     "in-view": "^0.6.1",

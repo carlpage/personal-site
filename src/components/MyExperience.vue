@@ -1,30 +1,30 @@
 <template>
     <section class="container bg-white my-experience py-5" 
-      id="my-experience" 
-      v-waypoint="{
-        active: true,
-        callback: $store.getters.onWaypoint,
-        options: $store.state.intersectionOptions
+    id="my-experience" 
+    v-observe-visibility="{
+      callback: $store.getters.visibilityChanged,
+      throttle: 300,
+      intersection: $store.state.intersectionOptions
     }">
-        <h2 class="text-center mb-5 has-fresh-line has-fresh-line--black">My experience</h2>
-        <div v-for="(item, index) in whatIveDone" :key="index" class="row mb-4" data-aos="fade-up">
-            <div class="col-md-3 col-md-offset-1 d-flex align-items-start align-items-lg-center justify-content-center">
-                <img 
-                    class="img-fluid my-experience__img mb-3 mb-md-0" 
-                    height="200" 
-                    width="200" 
-                    v-lazy="require(`../../public/img/${item.image}`)" 
-                    :alt="item.name"
-                />
-            </div>
-            <div class="col-md-8">
-                <h3>
-                    <a :href="item.link" class="text-dark" target="_blank">{{ item.name }}</a>
-                </h3>
-                <h5 class="text-green">{{ item.title }}</h5>
-                <h5>{{ item.location }}</h5>
-                <p>{{ item.description }}</p>
-            </div>
+      <h2 class="text-center mb-5 has-fresh-line has-fresh-line--black">My experience</h2>
+      <div v-for="(item, index) in whatIveDone" :key="index" class="row mb-4" data-aos="fade-up">
+          <div class="col-md-3 col-md-offset-1 d-flex align-items-start align-items-lg-center justify-content-center">
+              <img 
+                  class="img-fluid my-experience__img mb-3 mb-md-0" 
+                  height="200" 
+                  width="200" 
+                  v-lazy="require(`../../public/img/${item.image}`)" 
+                  :alt="item.name"
+              />
+          </div>
+          <div class="col-md-8">
+              <h3>
+                  <a :href="item.link" class="text-dark" target="_blank">{{ item.name }}</a>
+              </h3>
+              <h5 class="text-green">{{ item.title }}</h5>
+              <h5>{{ item.location }}</h5>
+              <p>{{ item.description }}</p>
+          </div>
         </div>
     </section>
 </template>

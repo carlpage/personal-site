@@ -1,10 +1,10 @@
 <template>
     <section class="container pt-5 pb-5 pb-md-0" 
     id="contact" 
-    v-waypoint="{
-        active: true,
-        callback: $store.getters.onWaypoint,
-        options: $store.state.intersectionOptions
+    v-observe-visibility="{
+        callback: $store.getters.visibilityChanged,
+        throttle: 300,
+        intersection: $store.state.intersectionOptions
     }">
         <h2 class="text-center mb-4 has-fresh-line has-fresh-line--black">Contact</h2>
         <div class="row">

@@ -1,10 +1,10 @@
 <template>
     <section class="intro" 
     id="intro"
-    v-waypoint="{
-        active: true,
-        callback: $store.getters.onWaypoint,
-        options: $store.state.intersectionOptions
+    v-observe-visibility="{
+        callback: $store.getters.visibilityChanged,
+        throttle: 300,
+        intersection: $store.state.intersectionOptions
     }">
         <div class="slick-slider">
             <div class="slider" v-lazy:background-image="require('../../public/img/carl-in-rome.jpg')">

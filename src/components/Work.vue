@@ -1,10 +1,10 @@
 <template>
     <section class="bg-light py-5" 
     id="work" 
-    v-waypoint="{
-        active: true,
-        callback: $store.getters.onWaypoint,
-        options: $store.state.intersectionOptions
+    v-observe-visibility="{
+        callback: $store.getters.visibilityChanged,
+        throttle: 300,
+        intersection: $store.state.intersectionOptions
     }">
         <div class="container">
             <h2 class="text-center mb-4 has-fresh-line has-fresh-line--black">My Work</h2>

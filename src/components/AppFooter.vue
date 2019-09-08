@@ -1,5 +1,11 @@
 <template>
-  <div>
+  <div
+  id="contact" 
+  v-observe-visibility="{
+      callback: $store.getters.visibilityChanged,
+      throttle: 300,
+      intersection: $store.state.intersectionOptions
+  }">
     <footer class="footer bg-dark">
       <div class="container">
         <div class="row">
@@ -25,7 +31,7 @@
       <!-- end container -->
     </footer>
     <!-- end footer -->
-    <div class="navigation-buttons">
+    <div class="navigation-buttons d-none d-md-block">
       <span v-scroll-to="aboveSectionId()" class="prev d-flex align-items-center justify-content-center">
         <i class="fa fa-chevron-up text-white"></i>
       </span>
