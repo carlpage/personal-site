@@ -14,7 +14,7 @@
                     :key="index"
                     class="col-sm-6 col-lg-4 mb-4"
                 >
-                    <div class="card">
+                    <div class="card d-flex align-items-center">
                         <a v-if="work.link" :href="work.link" target="_blank" class="d-flex justify-content-center">
                             <img v-if="work.image" 
                                 v-lazy="require(`../../public/img/${work.image}`)"
@@ -48,7 +48,7 @@ export default {
                     title: "Zinpro",
                     image: 'zinpro.jpg',
                     link: null,
-                    description: 'Nearly a year of my time at MJK was spent building an offline-capable progressive web application built in VueJS using Firebase and NodeJS for the back-end. My primary responsibility was building the front-end and reporting capability of the application. Due to signing an NDA, I am not able to display this project.'
+                    description: 'The largest project I worked on at MJK was an offline-capable progressive web application built in VueJS using Firebase and NodeJS for the back-end. My primary responsibility was building the front-end and reporting capability of the application. Due to signing an NDA, I am not able to display this project.'
                 },
                 {
                     title: "Life Link III",

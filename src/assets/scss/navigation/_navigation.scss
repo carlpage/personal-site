@@ -17,26 +17,26 @@
         z-index: 2000;
 
         @media(max-width: 992px) {
-            top: 3rem;
             right: 3rem;
+            top: 3rem;
         }
 
         @media(max-width:767px) {
-            width: 3.5rem;
             height: 3.5rem;
             top: 2.5rem;
             right: 2.5rem;
+            width: 3.5rem;
         }
     }
 
     &__background {
+        background-color: $blue-alt;
         height: 4.5rem;
         width: 4.5rem;
         border-radius: 50%;
         position: fixed;
         top: 4.25rem;
         right: 4.25rem;
-        background-color: $green;
         z-index: 1000;
         transition: transform .6s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -111,7 +111,7 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: $green;
+            color: $blue-alt;
             transform: translateX(1rem);
         }
     }

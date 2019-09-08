@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <navigation />
     <intro />
     <my-experience />
     <work />
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import Navigation from "./components/Navigation.vue";
 import Intro from "./components/Intro.vue";
 import MyExperience from "./components/MyExperience.vue";
 import Work from "./components/Work.vue";
@@ -20,6 +22,7 @@ import AppFooter from "./components/AppFooter.vue";
 export default {
   name: "app",
   components: {
+    Navigation,
     Intro,
     Work,
     MyExperience,
