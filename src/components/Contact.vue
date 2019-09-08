@@ -2,8 +2,9 @@
     <section class="container pt-5 pb-5 pb-md-0" 
     id="contact" 
     v-waypoint="{
-        callback: this.$store.getters.changeIdInView('contact'),
-        intersection: {threshold: [0.25, 0.75]}
+        active: true,
+        callback: $store.getters.onWaypoint,
+        options: $store.state.intersectionOptions
     }">
         <h2 class="text-center mb-4 has-fresh-line has-fresh-line--black">Contact</h2>
         <div class="row">
@@ -18,10 +19,7 @@
                 </h4>
                 <h5 class="text-gray">
                     Let's get in touch.
-                    <a href="https://www.linkedin.com/in/carl-page/" target="_blank">LinkedIn</a>
-                    or
-                    <a href="https://www.facebook.com/carl.page.7" target="_blank">Facebook</a>
-                    messages work best.
+                    <a href="https://www.linkedin.com/in/carl-page/" target="_blank">LinkedIn</a> messages work best.
                 </h5>
             </div>
         </div>
@@ -30,6 +28,7 @@
 
 <script>
 export default {
-  created() {}
+    created() {},
+    methods: {}
 };
 </script>

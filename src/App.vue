@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <intro />
-    <what-ive-done />
+    <my-experience />
     <work />
     <my-beliefs />
     <contact />
@@ -11,7 +11,7 @@
 
 <script>
 import Intro from "./components/Intro.vue";
-import WhatIveDone from "./components/WhatIveDone.vue";
+import MyExperience from "./components/MyExperience.vue";
 import Work from "./components/Work.vue";
 import MyBeliefs from "./components/MyBeliefs.vue";
 import Contact from "./components/Contact.vue";
@@ -22,7 +22,7 @@ export default {
   components: {
     Intro,
     Work,
-    WhatIveDone,
+    MyExperience,
     MyBeliefs,
     Contact,
     AppFooter

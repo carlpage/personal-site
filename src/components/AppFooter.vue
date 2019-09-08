@@ -14,9 +14,6 @@
               <a class="footer__link" target="_blank" href="https://www.linkedin.com/in/carl-page/">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a class="footer__link" target="_blank" href="https://www.facebook.com/carl.page.7">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
               <a class="footer__link" target="_blank" href="https://github.com/carlpage">
                 <i class="fa fa-github" aria-hidden="true"></i>
               </a>
@@ -28,7 +25,6 @@
       <!-- end container -->
     </footer>
     <!-- end footer -->
-
     <div class="navigation-buttons">
       <span v-scroll-to="aboveSectionId()" class="prev d-flex align-items-center justify-content-center">
         <i class="fa fa-chevron-up text-white"></i>
@@ -43,42 +39,43 @@
 <script>
   export default {
     data() {
-      return {
-        // nextElement: false
-      }
+      return {}
     },
     methods: {
       aboveSectionId() {
         console.log('HIT aboveSectionId')
-        let id;
-        if(this.$store.state.idInView === 'what-ive-done') {
-          id = '#intro';
-        } else if(this.$store.state.idInView === 'work') {
-          id = '#what-ive-done';
-        } else if(this.$store.state.idInView === 'my-beliefs') {
-          id = '#work';
-        } else if(this.$store.state.idInView === 'contact') {
-          id = '#my-beliefs';
-        } 
-        console.log('id', id)
-        return id;
+        switch(this.$store.state.idInView) {
+          case 'intro': 
+            return '#intro';
+          case 'my-experience': 
+            return '#intro';
+          case 'work': 
+            return '#my-experience';
+          case 'my-beliefs': 
+            return '#work';
+          case 'contact': 
+            return '#my-beliefs';
+        }
       },
       lowerSectionId() {
         console.log('HIT lowerSectionId')
-        if(this.$store.state.idInView === 'intro') {
-          return '#what-ive-done';
-        } else if(this.$store.state.idInView === 'what-ive-done') {
-          return '#work';
-        } else if(this.$store.state.idInView === 'work') {
-          return '#my-beliefs';
-        } else if(this.$store.state.idInView === 'my-beliefs') {
-          return '#contact';
-        } 
+        switch(this.$store.state.idInView) {
+          case 'intro': 
+            return '#my-experience';
+          case 'my-experience': 
+            return '#work';
+          case 'work': 
+            return '#my-beliefs';
+          case 'my-beliefs': 
+            return '#contact';
+          case 'contact': 
+            return '#contact';
+        }
       }
     },
     created() {
-      console.log('store', this.$store);
-      console.log('idInView', this.$store.state.idInView);
+      // console.log('store', this.$store);
+      // console.log('idInView', this.$store.state.idInView);
     }
   };
 </script>

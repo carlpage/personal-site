@@ -38,7 +38,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$green-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(40, 167, 69, 1) 0%, rgba(0, 255, 109, 1) 100%);
+$blue-gradient: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(6, 131, 215, 1) 0%, rgba(0, 209, 233, 1) 100%);
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -53,7 +53,7 @@ $grays: map-merge(("100": $gray-100,
     "900": $gray-900),
 $grays);
 
-$blue: #007bff !default;
+$blue: #0683d7 !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;

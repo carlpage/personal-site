@@ -19,7 +19,7 @@ git commit -m 'deploy'
 # if you are deploying to https://carlpage.github.io
 # git push -f git@github.com:carlpage/carlpage.github.io.git master
 
-# if you are deploying to https://carlpage.github.io/personal-site
+# if you are deploying to https://carlpage.github.io/personal-site/
 git push -f git@github.com:carlpage/personal-site.git master:gh-pages
 
 cd -

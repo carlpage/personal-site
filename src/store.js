@@ -5,12 +5,17 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    idInView: "intro"
+    idInView: "intro",
+    intersectionOptions: {
+      root: null,
+      rootMargin: "0px 0px 0px 0px",
+      threshold: [0.4, 0.6]
+    }
   },
   getters: {
-    changeIdInView: state => (newId) => {
-      console.log('HIIIIIY', newId);
-      state.idInView = newId;
+    onWaypoint: (state) => (observerData) => {
+      console.log('observerData', observerData)
+      state.idInView = observerData.el.id;
     }
   },
   mutations: {},

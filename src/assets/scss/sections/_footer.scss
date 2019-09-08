@@ -41,15 +41,15 @@
         }
 
         &:hover {
-            background-color: $green;
+            background-color: $blue;
             color: white;
 
             &:before {
-                @include triangle(down-right, 15px, 48px, $green);
+                @include triangle(down-right, 15px, 48px, $blue);
             }
 
             &:after {
-                @include triangle(up-left, 15px, 48px, $green);
+                @include triangle(up-left, 15px, 48px, $blue);
             }
         }
 

@@ -1,15 +1,16 @@
 <template>
-    <section class="container bg-white what-ive-done py-5" 
-      id="what-ive-done" 
+    <section class="container bg-white my-experience py-5" 
+      id="my-experience" 
       v-waypoint="{
-        callback: this.$store.getters.changeIdInView('what-ive-done'),
-        intersection: {threshold: [0.25, 0.75]}
+        active: true,
+        callback: $store.getters.onWaypoint,
+        options: $store.state.intersectionOptions
     }">
-        <h2 class="text-center mb-5 has-fresh-line has-fresh-line--black">Here's my experience so far</h2>
+        <h2 class="text-center mb-5 has-fresh-line has-fresh-line--black">My experience</h2>
         <div v-for="(item, index) in whatIveDone" :key="index" class="row mb-4" data-aos="fade-up">
             <div class="col-md-3 col-md-offset-1 d-flex align-items-start align-items-lg-center justify-content-center">
                 <img 
-                    class="img-fluid what-ive-done__img mb-3 mb-md-0" 
+                    class="img-fluid my-experience__img mb-3 mb-md-0" 
                     height="200" 
                     width="200" 
                     v-lazy="require(`../../public/img/${item.image}`)" 
@@ -70,8 +71,7 @@ export default {
       ]
     };
   },
-  created() {
-    console.log('whativedone store getters', this.$store.getters);
-  }
+  methods: {},
+  created() {}
 };
 </script>
