@@ -18,16 +18,16 @@
         position: relative;
         transition: all .3s ease-in-out;
 
-        &:before {
-            bottom: 0;
-            left: -15px;
-            @include triangle(down-right, 15px, 48px, #222);
-        }
-
         &:after {
             right: -15px;
             top: 0;
             @include triangle(up-left, 15px, 48px, #222);
+        }
+
+        &:before {
+            bottom: 0;
+            left: -15px;
+            @include triangle(down-right, 15px, 48px, #222);
         }
 
         &:before,
@@ -57,10 +57,6 @@
             margin-left: 20px;
         }
 
-        .fa {
-            position: relative;
-            z-index: 1;
-        }
     }
 
     &__site-social-links {
@@ -83,10 +79,11 @@
         display: block;
         height: 30px;
         margin-top: 6px;
+        transition: all .1s;
         width: 30px;
 
-        i {
-            
+        &:hover {
+            background-color: $gray-800;
         }
     }
 }
