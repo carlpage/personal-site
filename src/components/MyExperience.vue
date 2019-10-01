@@ -6,7 +6,7 @@
       throttle: 300,
       intersection: $store.state.intersectionOptions
     }">
-      <h2 class="text-center mb-5 has-fresh-line has-fresh-line--black">My experience</h2>
+      <h2 class="text-center mb-5 has-fresh-line has-fresh-line--black">My Experience</h2>
       <div v-for="(item, index) in whatIveDone" :key="index" class="row mb-4" data-aos="fade-up">
           <div class="col-md-3 col-md-offset-1 d-flex align-items-start align-items-lg-center justify-content-center">
               <img 
@@ -36,12 +36,12 @@ export default {
       whatIveDone: [
         {
           name: "MJ Kretsinger",
-          title: "Web Developer, since May 2018",
+          title: "Web Developer, May 2018 to August 2019",
           link: "https://mjkretsinger.com/",
           location: "Edina, MN",
           image: "MJK.png",
           description:
-            "During my time as a Web Developer at MJ Kretsinger, the majority of my time was spent building an offline-capable progressive web application built in VueJS using Firebase and NodeJS for the back-end. My primary responsibility was building the front-end and reporting capability of the application. I was also a primary developer on sizeable projects built in VueJS for Medtronic and Lifelink III. Furthermore, I have sharpened my PHP skills by building several WordPress sites for companies such as New Horizon Academy, Kinderberry Hill, and Lifelink III."
+            "During my time as a Web Developer at MJ Kretsinger, a large portion of my time was spent building an offline-capable progressive web application built in VueJS using Firebase and NodeJS for the back-end. My primary responsibility was building the front-end and reporting capability of the application. I was also a primary developer on a couple other sizeable projects built in VueJS. Furthermore, I have sharpened my PHP skills by building several WordPress sites for companies such as New Horizon Academy, Kinderberry Hill, and Lifelink III."
         },
         {
           name: "Comfy Chair Consulting",
@@ -50,7 +50,7 @@ export default {
           location: "Minneapolis, MN",
           image: "comfy-chair.svg",
           description:
-            "After graduating from Prime Academy, I worked as a Front-End Developer at Comfy Chair Consulting. We built our sites by constructing our own HTML/CSS templates from the ground up and converted them into WordPress using PHP. We also built our own WordPress template in VueJS."
+            "Collaborated closely with a senior developer to build sites by constructing our own HTML/CSS templates from the ground up and converted them into WordPress using PHP. We also built our own WordPress template in VueJS."
         },
         {
           name: "Prime Digital Academy",

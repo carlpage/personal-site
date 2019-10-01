@@ -14,7 +14,7 @@
             <div class="col-md-6 d-flex justify-content-center flex-column">
                 <h4 class="mb-3">
                     Want to get in contact with me? Whether you would like to chat about
-                    the best places to eat in Minneapolis, speak some German, discuss a programming problem, or talk about the best
+                    the best places to eat in Minneapolis, speak some German, discuss programming, or talk about the best
                     places to bike in Minnesota, feel free to send me a message!
                 </h4>
                 <h5 class="text-gray">

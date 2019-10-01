@@ -49,7 +49,6 @@
     },
     methods: {
       aboveSectionId() {
-        console.log('HIT aboveSectionId')
         switch(this.$store.state.idInView) {
           case 'intro': 
             return '#intro';
@@ -64,7 +63,6 @@
         }
       },
       lowerSectionId() {
-        console.log('HIT lowerSectionId')
         switch(this.$store.state.idInView) {
           case 'intro': 
             return '#my-experience';
@@ -79,9 +77,6 @@
         }
       }
     },
-    created() {
-      // console.log('store', this.$store);
-      // console.log('idInView', this.$store.state.idInView);
-    }
+    created() {}
   };
 </script>

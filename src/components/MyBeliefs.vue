@@ -33,7 +33,7 @@ export default {
         },
         {
           name: "Don't Take Yourself Too Seriously",
-          link: "https://cdn-images-1.medium.com/max/1200/1*18ni-jM82AmLKqyeeNBKjw.jpeg"
+          link: "https://media.vanityfair.com/photos/54284ab006f2391147572a8b/master/w_1600%2Cc_limit/image.jpg"
         },
         {
           name: "Read Every Day",

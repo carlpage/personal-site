@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f94450b7886162609460",
-    "url": "/personal-site/css/app.63912388.css"
+    "revision": "3bf76b35acae28425a1d",
+    "url": "/personal-site/css/app.ef336b32.css"
   },
   {
-    "revision": "f94450b7886162609460",
-    "url": "/personal-site/js/app.779ce56e.js"
+    "revision": "3bf76b35acae28425a1d",
+    "url": "/personal-site/js/app.7dded45f.js"
   },
   {
     "revision": "4a43cf905fbab469f961",
@@ -88,7 +88,11 @@ self.__precacheManifest = [
     "url": "/personal-site/img/medtronic.27417408.png"
   },
   {
-    "revision": "a9fb48bdb5379aa4d6e5f2e02c5f4918",
+    "revision": "03982fcc55ea3c029d6f0cc3be7b8edf",
+    "url": "/personal-site/img/slickster.03982fcc.jpeg"
+  },
+  {
+    "revision": "d01bd668ba72e09e751ba65b6c332c35",
     "url": "/personal-site/index.html"
   },
   {
@@ -146,6 +150,10 @@ self.__precacheManifest = [
   {
     "revision": "e618ddf0030d78826162b1d29e084af1",
     "url": "/personal-site/img/prime.png"
+  },
+  {
+    "revision": "03982fcc55ea3c029d6f0cc3be7b8edf",
+    "url": "/personal-site/img/slickster.jpeg"
   },
   {
     "revision": "8e7e59f37c25bc3bdd2c4149114ffb41",
