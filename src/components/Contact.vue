@@ -9,7 +9,11 @@
         <h2 class="text-center mb-4 has-fresh-line has-fresh-line--black">Contact</h2>
         <div class="row">
             <div class="col-md-6 d-flex align-items-end">
-                <img class="img-fluid mb-4 mb-md-0" v-lazy="require('../../public/img/carl-page-no-bg.png')" alt="Carl Page"/>
+                <img 
+                    class="img-fluid mb-4 mb-md-0" 
+                    :src="require('../../public/img/carl-page-no-bg.png')" 
+                    alt="Carl Page"
+                />
             </div>
             <div class="col-md-6 d-flex justify-content-center flex-column">
                 <h4 class="mb-3">

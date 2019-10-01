@@ -17,13 +17,14 @@
                     <div class="card d-flex align-items-center">
                         <a v-if="work.link" :href="work.link" target="_blank" class="d-flex justify-content-center">
                             <img v-if="work.image" 
-                                v-lazy="require(`../../public/img/${work.image}`)"
+                                :src="require(`../../public/img/${work.image}`)"
                                 :alt="work.title"
                                 class="card-img-top"
                             >
                         </a>
                         <img v-else-if="work.image && !work.link"
-                            v-lazy="require(`../../public/img/${work.image}`)"
+                            :src="require(`../../public/img/${work.image}`)"
+                            :data-src="require(`../../public/img/${work.image}`)"
                             :alt="work.title"
                             class="card-img-top"
                         >

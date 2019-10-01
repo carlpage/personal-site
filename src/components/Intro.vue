@@ -7,7 +7,7 @@
         intersection: $store.state.intersectionOptions
     }">
         <div class="slick-slider">
-            <div class="slider" v-lazy:background-image="require('../../public/img/carl-in-rome.jpg')">
+            <div class="slider">
                 <div class="slider__testimonials">
                     <div class="container">
                         <h3>Hi, I'm</h3>

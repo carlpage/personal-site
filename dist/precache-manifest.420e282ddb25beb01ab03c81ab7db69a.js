@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "3bf76b35acae28425a1d",
+    "revision": "9be1b545f0144a542f5b",
     "url": "/personal-site/css/app.ef336b32.css"
   },
   {
-    "revision": "3bf76b35acae28425a1d",
-    "url": "/personal-site/js/app.7dded45f.js"
+    "revision": "9be1b545f0144a542f5b",
+    "url": "/personal-site/js/app.2e5aac2d.js"
   },
   {
     "revision": "4a43cf905fbab469f961",
@@ -14,6 +14,10 @@ self.__precacheManifest = [
   {
     "revision": "2b3e5f664b7d6ce8bf0cad49e4e61905",
     "url": "/personal-site/img/apple-touch-icon.2b3e5f66.png"
+  },
+  {
+    "revision": "dd3c04ac3dc49a46a43b64065e3deff0",
+    "url": "/personal-site/img/bi-worldwide.dd3c04ac.png"
   },
   {
     "revision": "d61b27c8405eacfa104aed6b43f05281",
@@ -92,8 +96,12 @@ self.__precacheManifest = [
     "url": "/personal-site/img/slickster.03982fcc.jpeg"
   },
   {
-    "revision": "d01bd668ba72e09e751ba65b6c332c35",
+    "revision": "892718d74b27164c3d2a4fef479a4065",
     "url": "/personal-site/index.html"
+  },
+  {
+    "revision": "dd3c04ac3dc49a46a43b64065e3deff0",
+    "url": "/personal-site/img/bi-worldwide.png"
   },
   {
     "revision": "d6af873dc43f603a1a113965b62e21b0",

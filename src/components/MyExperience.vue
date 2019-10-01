@@ -13,7 +13,7 @@
                   class="img-fluid my-experience__img mb-3 mb-md-0" 
                   height="200" 
                   width="200" 
-                  v-lazy="require(`../../public/img/${item.image}`)" 
+                  :src="require(`../../public/img/${item.image}`)" 
                   :alt="item.name"
               />
           </div>
