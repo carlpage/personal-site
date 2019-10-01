@@ -1,19 +1,16 @@
 .intro {
     position: relative;
-}
-
-.slick-slider {
-    height: 100vh;
-    position: relative;
-    width: 100%;
-
-    .slider {
+    
+    &__main {
         background-attachment: fixed;
         background-image: url('../../../public/img/carl-in-rome.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
+        height: 100vh;
+        position: relative;
+        width: 100%;
+        
         &:before {
             background: rgba(0, 0, 0, .4);
             bottom: 0;
@@ -23,49 +20,47 @@
             right: 0;
             top: 0;
         }
-    }
-}
-
-.slider__testimonials {
-    &__logo {
-        height: 25rem;
-        position: fixed;
-        top: 0;
-        z-index: 2;
-    }
-
-    .container {
-        align-items: center;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        justify-content: center;
-
-        h1 {
-            font-size: 7rem;
-            line-height: 1.4;
-            margin-bottom: 0;
-            margin-top: 0;
-            text-align: center;
+    
+        &__logo {
+            height: 25rem;
+            position: fixed;
+            top: 0;
             z-index: 2;
-
-            @media(max-width: 767px) {
-                font-size: 4rem;
+        }
+    
+        .container {
+            align-items: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+    
+            h1 {
+                font-size: 7rem;
+                line-height: 1.4;
+                margin-bottom: 0;
+                margin-top: 0;
+                text-align: center;
+                z-index: 2;
+    
+                @media(max-width: 767px) {
+                    font-size: 4rem;
+                }
             }
-        }
-
-        h3 {
-            margin-bottom: 0;
-            margin-top: 1rem;
-            text-align: center;
-            z-index: 2;
-        }
-
-        h4 {
-            line-height: 1.7;
-            text-align: center;
-            z-index: 2;
+    
+            h3 {
+                margin-bottom: 0;
+                margin-top: 1rem;
+                text-align: center;
+                z-index: 2;
+            }
+    
+            h4 {
+                line-height: 1.7;
+                text-align: center;
+                z-index: 2;
+            }
         }
     }
 }
