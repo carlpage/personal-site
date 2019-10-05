@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cff4dffde26e874a490a",
-    "url": "/personal-site/css/app.525e0c3f.css"
+    "revision": "2b12d86ded7678b192e4",
+    "url": "/personal-site/css/app.8d1037a7.css"
   },
   {
-    "revision": "cff4dffde26e874a490a",
-    "url": "/personal-site/js/app.e0166ab5.js"
+    "revision": "2b12d86ded7678b192e4",
+    "url": "/personal-site/js/app.ffc0f368.js"
   },
   {
     "revision": "5c0180256d4ac39c3c7d",
@@ -56,6 +56,14 @@ self.__precacheManifest = [
     "url": "/personal-site/img/me-in-san-fransisco-mobile.b953adc1.jpg"
   },
   {
+    "revision": "d3682a1518b14a6bc2c52bc6f003b6f7",
+    "url": "/personal-site/img/me-in-san-fransisco-desktop-3.d3682a15.jpg"
+  },
+  {
+    "revision": "e6393eac5931e4e957bb5bf3ef676dd4",
+    "url": "/personal-site/img/me-in-san-fransisco-desktop-2.e6393eac.jpg"
+  },
+  {
     "revision": "0bdd764da42e7e765385554e2942253c",
     "url": "/personal-site/img/comfy-chair.0bdd764d.svg"
   },
@@ -80,7 +88,7 @@ self.__precacheManifest = [
     "url": "/personal-site/img/android-chrome-512x512.cc33a0e5.png"
   },
   {
-    "revision": "705b4de34b62d81c12188dd64dd2132c",
+    "revision": "351fbd4095a645441a0d2fc72478ba9f",
     "url": "/personal-site/index.html"
   },
   {
@@ -114,6 +122,14 @@ self.__precacheManifest = [
   {
     "revision": "0ad380d071c2d313866bba335d05ae84",
     "url": "/personal-site/img/me-in-rome.jpg"
+  },
+  {
+    "revision": "e6393eac5931e4e957bb5bf3ef676dd4",
+    "url": "/personal-site/img/me-in-san-fransisco-desktop-2.jpg"
+  },
+  {
+    "revision": "d3682a1518b14a6bc2c52bc6f003b6f7",
+    "url": "/personal-site/img/me-in-san-fransisco-desktop-3.jpg"
   },
   {
     "revision": "1db6b66011f6b800ef619461e8f87c11",
