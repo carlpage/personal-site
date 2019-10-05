@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "434046917a572a327d35",
-    "url": "/personal-site/css/app.0b639af3.css"
+    "revision": "36311cde5e47393d6722",
+    "url": "/personal-site/css/app.525e0c3f.css"
   },
   {
-    "revision": "434046917a572a327d35",
-    "url": "/personal-site/js/app.5f397efa.js"
+    "revision": "36311cde5e47393d6722",
+    "url": "/personal-site/js/app.e4b91e71.js"
   },
   {
     "revision": "5c0180256d4ac39c3c7d",
@@ -18,6 +18,10 @@ self.__precacheManifest = [
   {
     "revision": "d61b27c8405eacfa104aed6b43f05281",
     "url": "/personal-site/img/kbh.d61b27c8.png"
+  },
+  {
+    "revision": "1db6b66011f6b800ef619461e8f87c11",
+    "url": "/personal-site/img/me-in-san-fransisco-desktop.1db6b660.jpg"
   },
   {
     "revision": "0ad380d071c2d313866bba335d05ae84",
@@ -48,8 +52,8 @@ self.__precacheManifest = [
     "url": "/personal-site/img/facial_recognition.887c3deb.png"
   },
   {
-    "revision": "d6af873dc43f603a1a113965b62e21b0",
-    "url": "/personal-site/img/carl-in-rome.d6af873d.jpg"
+    "revision": "b953adc108981bffd5971d2bc1c6795a",
+    "url": "/personal-site/img/me-in-san-fransisco-mobile.b953adc1.jpg"
   },
   {
     "revision": "0bdd764da42e7e765385554e2942253c",
@@ -62,6 +66,10 @@ self.__precacheManifest = [
   {
     "revision": "89a98dcb4acacdc5b7e8a42936093f02",
     "url": "/personal-site/img/mayo_clinic.89a98dcb.png"
+  },
+  {
+    "revision": "d6af873dc43f603a1a113965b62e21b0",
+    "url": "/personal-site/img/carl-in-rome.d6af873d.jpg"
   },
   {
     "revision": "64032fd1aeae429c39cebc14c84fc51f",
@@ -80,11 +88,7 @@ self.__precacheManifest = [
     "url": "/personal-site/img/prime.e618ddf0.png"
   },
   {
-    "revision": "03982fcc55ea3c029d6f0cc3be7b8edf",
-    "url": "/personal-site/img/slickster.03982fcc.jpeg"
-  },
-  {
-    "revision": "a0f27d7f3fc34f90319936dab0f3aea4",
+    "revision": "b6f7cc568657ff1380c5aa50dc777445",
     "url": "/personal-site/index.html"
   },
   {
@@ -120,6 +124,14 @@ self.__precacheManifest = [
     "url": "/personal-site/img/me-in-rome.jpg"
   },
   {
+    "revision": "1db6b66011f6b800ef619461e8f87c11",
+    "url": "/personal-site/img/me-in-san-fransisco-desktop.jpg"
+  },
+  {
+    "revision": "b953adc108981bffd5971d2bc1c6795a",
+    "url": "/personal-site/img/me-in-san-fransisco-mobile.jpg"
+  },
+  {
     "revision": "880338d9f0f56347b3a1a390c31948cb",
     "url": "/personal-site/img/metro-state.jpg"
   },
@@ -138,10 +150,6 @@ self.__precacheManifest = [
   {
     "revision": "e618ddf0030d78826162b1d29e084af1",
     "url": "/personal-site/img/prime.png"
-  },
-  {
-    "revision": "03982fcc55ea3c029d6f0cc3be7b8edf",
-    "url": "/personal-site/img/slickster.jpeg"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
