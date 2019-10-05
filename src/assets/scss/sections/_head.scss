@@ -12,11 +12,11 @@
         width: 100%;
 
         @media(min-width: 767px) {
-            background-image: url('../../../public/img/me-in-san-fransisco-desktop.jpg')
+            background-image: url('../../../public/img/me-in-san-fransisco-desktop-3.jpg')
         }
         
         &:before {
-            background: rgba(0, 0, 0, .1);
+            background: rgba(0, 0, 0, .2);
             bottom: 0;
             content: "";
             left: 0;
