@@ -7,7 +7,7 @@
       intersection: $store.state.intersectionOptions
   }">
     <div class="container">
-      <h2 class="text-white text-center mb-4 has-fresh-line">My core beliefs</h2>
+      <h2 class="text-white text-center mb-4 has-fresh-line">My Core Beliefs</h2>
       <div class="row text-center">
         <div
           v-for="(belief, index) in beliefs"

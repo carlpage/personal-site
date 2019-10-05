@@ -3,16 +3,20 @@
     
     &__main {
         background-attachment: fixed;
-        background-image: url('../../../public/img/carl-in-rome.jpg');
+        background-image: url('../../../public/img/me-in-san-fransisco-mobile.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
         position: relative;
         width: 100%;
+
+        @media(min-width: 767px) {
+            background-image: url('../../../public/img/me-in-san-fransisco-desktop.jpg')
+        }
         
         &:before {
-            background: rgba(0, 0, 0, .4);
+            background: rgba(0, 0, 0, .1);
             bottom: 0;
             content: "";
             left: 0;

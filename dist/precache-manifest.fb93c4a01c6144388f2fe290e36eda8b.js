@@ -1,31 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "9be1b545f0144a542f5b",
-    "url": "/personal-site/css/app.ef336b32.css"
+    "revision": "434046917a572a327d35",
+    "url": "/personal-site/css/app.0b639af3.css"
   },
   {
-    "revision": "9be1b545f0144a542f5b",
-    "url": "/personal-site/js/app.2e5aac2d.js"
+    "revision": "434046917a572a327d35",
+    "url": "/personal-site/js/app.5f397efa.js"
   },
   {
-    "revision": "4a43cf905fbab469f961",
-    "url": "/personal-site/js/chunk-vendors.9603a4b4.js"
+    "revision": "5c0180256d4ac39c3c7d",
+    "url": "/personal-site/js/chunk-vendors.439529c0.js"
   },
   {
     "revision": "2b3e5f664b7d6ce8bf0cad49e4e61905",
     "url": "/personal-site/img/apple-touch-icon.2b3e5f66.png"
   },
   {
-    "revision": "dd3c04ac3dc49a46a43b64065e3deff0",
-    "url": "/personal-site/img/bi-worldwide.dd3c04ac.png"
-  },
-  {
     "revision": "d61b27c8405eacfa104aed6b43f05281",
     "url": "/personal-site/img/kbh.d61b27c8.png"
-  },
-  {
-    "revision": "8e7e59f37c25bc3bdd2c4149114ffb41",
-    "url": "/personal-site/img/zinpro.8e7e59f3.jpg"
   },
   {
     "revision": "0ad380d071c2d313866bba335d05ae84",
@@ -56,6 +48,10 @@ self.__precacheManifest = [
     "url": "/personal-site/img/facial_recognition.887c3deb.png"
   },
   {
+    "revision": "d6af873dc43f603a1a113965b62e21b0",
+    "url": "/personal-site/img/carl-in-rome.d6af873d.jpg"
+  },
+  {
     "revision": "0bdd764da42e7e765385554e2942253c",
     "url": "/personal-site/img/comfy-chair.0bdd764d.svg"
   },
@@ -66,10 +62,6 @@ self.__precacheManifest = [
   {
     "revision": "89a98dcb4acacdc5b7e8a42936093f02",
     "url": "/personal-site/img/mayo_clinic.89a98dcb.png"
-  },
-  {
-    "revision": "d6af873dc43f603a1a113965b62e21b0",
-    "url": "/personal-site/img/carl-in-rome.d6af873d.jpg"
   },
   {
     "revision": "64032fd1aeae429c39cebc14c84fc51f",
@@ -88,20 +80,12 @@ self.__precacheManifest = [
     "url": "/personal-site/img/prime.e618ddf0.png"
   },
   {
-    "revision": "2741740898b34046133576351fd25604",
-    "url": "/personal-site/img/medtronic.27417408.png"
-  },
-  {
     "revision": "03982fcc55ea3c029d6f0cc3be7b8edf",
     "url": "/personal-site/img/slickster.03982fcc.jpeg"
   },
   {
-    "revision": "892718d74b27164c3d2a4fef479a4065",
+    "revision": "a0f27d7f3fc34f90319936dab0f3aea4",
     "url": "/personal-site/index.html"
-  },
-  {
-    "revision": "dd3c04ac3dc49a46a43b64065e3deff0",
-    "url": "/personal-site/img/bi-worldwide.png"
   },
   {
     "revision": "d6af873dc43f603a1a113965b62e21b0",
@@ -136,10 +120,6 @@ self.__precacheManifest = [
     "url": "/personal-site/img/me-in-rome.jpg"
   },
   {
-    "revision": "2741740898b34046133576351fd25604",
-    "url": "/personal-site/img/medtronic.png"
-  },
-  {
     "revision": "880338d9f0f56347b3a1a390c31948cb",
     "url": "/personal-site/img/metro-state.jpg"
   },
@@ -162,10 +142,6 @@ self.__precacheManifest = [
   {
     "revision": "03982fcc55ea3c029d6f0cc3be7b8edf",
     "url": "/personal-site/img/slickster.jpeg"
-  },
-  {
-    "revision": "8e7e59f37c25bc3bdd2c4149114ffb41",
-    "url": "/personal-site/img/zinpro.jpg"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",

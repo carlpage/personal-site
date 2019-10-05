@@ -49,7 +49,7 @@ export default {
                     title: "Life Link III",
                     image: 'lifelinkiii.png',
                     link: "https://www.lifelinkiii.com/",
-                    description: 'I was the primary developer that completed the marketing site for the helicopter EMT company, Lifelink III. This site was built using a module-based approach in WordPress.'
+                    description: 'I was the primary developer that completed the marketing site for the helicopter EMT company, Lifelink III. This site was built in WordPress using a module-based approach.'
                 },
                 {
                     title: "Kinderberry Hill",
